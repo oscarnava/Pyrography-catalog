@@ -1,6 +1,9 @@
 $back-color: #c8c0b3
-$item-display-width: 500px
+$item-min-display-width: 400px
+$item-max-display-width: 600px
 $item-display-border-width: 2px
+$item-header-color: #e4dbd2
+$item-header-background: #17120e // #553b28 //#4c4b49
 
 html
   box-sizing: border-box
@@ -14,17 +17,28 @@ html
 body
   background-color: $back-color
 
+h1
+  font-family: 'Courgette', cursive
+  font-size: 5rem
+  text-align: center
+
 .item-family
   display: flex
   flex-direction: column
+
+  h2
+    font-family: 'Courgette', cursive
+    font-size: 3rem
+    text-align: center
 
   .items-counter
     display: flex
 
   .item-display
-    max-width: $item-display-width
-    padding: 1rem
-    margin: 1rem 0.5rem
+    min-width: $item-min-display-width
+    max-width: $item-max-display-width
+    padding: 0 1rem 1rem
+    margin: 1rem
     background-color: white
     border-radius: 3 * $item-display-border-width
     box-shadow: 10px 10px 19px -4px rgba(0,0,0,1.0);
@@ -33,9 +47,18 @@ body
     border-right: solid $item-display-border-width rgba(0,0,0,0.75)
     border-bottom: solid $item-display-border-width rgba(0,0,0,0.75)
 
+    h3
+      font-size: 1.5rem
+      color: $item-header-color
+      background-color: $item-header-background
+      width: 50%
+      margin: -1rem 1rem 1rem -1.7rem
+      padding: 3px 5px
+      border-radius: 5px 0 0 5px
+
     figure
       float: left
-      width: $item-display-width / 3
+      width: $item-max-display-width / 3
       margin: 0 1rem 0.4rem 0
 
       figcaption
@@ -43,4 +66,4 @@ body
         font-weight: bold
 
       img
-        width: $item-display-width / 3
+        width: $item-max-display-width / 3

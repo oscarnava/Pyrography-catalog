@@ -13,9 +13,21 @@ body {
   background-color: #c8c0b3;
 }
 
+h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 5rem;
+  text-align: center;
+}
+
 .item-family {
   display: flex;
   flex-direction: column;
+}
+
+.item-family h2 {
+  font-family: 'Courgette', cursive;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .item-family .items-counter {
@@ -23,9 +35,10 @@ body {
 }
 
 .item-family .item-display {
-  max-width: 500px;
-  padding: 1rem;
-  margin: 1rem 0.5rem;
+  min-width: 400px;
+  max-width: 600px;
+  padding: 0 1rem 1rem;
+  margin: 1rem;
   background-color: white;
   border-radius: 6px;
   box-shadow: 10px 10px 19px -4px black;
@@ -35,9 +48,19 @@ body {
   border-bottom: solid 2px rgba(0, 0, 0, 0.75);
 }
 
+.item-family .item-display h3 {
+  font-size: 1.5rem;
+  color: #e4dbd2;
+  background-color: #17120e;
+  width: 50%;
+  margin: -1rem 1rem 1rem -1.7rem;
+  padding: 3px 5px;
+  border-radius: 5px 0 0 5px;
+}
+
 .item-family .item-display figure {
   float: left;
-  width: 166.66667px;
+  width: 200px;
   margin: 0 1rem 0.4rem 0;
 }
 
@@ -47,5 +70,5 @@ body {
 }
 
 .item-family .item-display figure img {
-  width: 166.66667px;
+  width: 200px;
 }
