@@ -1,13 +1,14 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-html {
-  scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+body {
+  background-color: #a28c74;
 }
