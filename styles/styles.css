@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 *, *:before, *:after {
@@ -10,5 +10,42 @@ html {
 }
 
 body {
-  background-color: #a28c74;
+  background-color: #c8c0b3;
+}
+
+.item-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-family .items-counter {
+  display: flex;
+}
+
+.item-family .item-display {
+  max-width: 500px;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 10px 10px 19px -4px black;
+  border-top: solid 2px rgba(0, 0, 0, 0.15);
+  border-left: solid 2px rgba(0, 0, 0, 0.15);
+  border-right: solid 2px rgba(0, 0, 0, 0.75);
+  border-bottom: solid 2px rgba(0, 0, 0, 0.75);
+}
+
+.item-family .item-display figure {
+  float: left;
+  width: 166.66667px;
+  margin: 0 1rem 0.4rem 0;
+}
+
+.item-family .item-display figure figcaption {
+  font-size: .75em;
+  font-weight: bold;
+}
+
+.item-family .item-display figure img {
+  width: 166.66667px;
 }

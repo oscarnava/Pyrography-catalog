@@ -1,13 +1,46 @@
-$back-color: #a28c74
+$back-color: #c8c0b3
+$item-display-width: 500px
+$item-display-border-width: 2px
 
 html
   box-sizing: border-box
   scroll-behavior: smooth
   font-family: 'Montserrat', sans-serif
-  font-size: 14px
+  font-size: 12px
 
 *, *:before, *:after
   box-sizing: inherit
 
 body
   background-color: $back-color
+
+.item-family
+  display: flex
+  flex-direction: column
+
+  .items-counter
+    display: flex
+
+  .item-display
+    max-width: $item-display-width
+    padding: 1rem
+    margin: 1rem 0.5rem
+    background-color: white
+    border-radius: 3 * $item-display-border-width
+    box-shadow: 10px 10px 19px -4px rgba(0,0,0,1.0);
+    border-top: solid $item-display-border-width rgba(0,0,0,0.15)
+    border-left: solid $item-display-border-width rgba(0,0,0,0.15)
+    border-right: solid $item-display-border-width rgba(0,0,0,0.75)
+    border-bottom: solid $item-display-border-width rgba(0,0,0,0.75)
+
+    figure
+      float: left
+      width: $item-display-width / 3
+      margin: 0 1rem 0.4rem 0
+
+      figcaption
+        font-size: .75em
+        font-weight: bold
+
+      img
+        width: $item-display-width / 3
