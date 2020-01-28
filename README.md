@@ -7,7 +7,7 @@ This project aims to be a prototype of a virtual showroom for the art of the Mex
 - CSS
 
 ## Live demo
-- [Pending](http://localhost/)
+- [The art of Arturo Nava](https://oscarnava.me/pirograbarte/)
 
 ## Author
 👤 Oscar Nava Trujillo
