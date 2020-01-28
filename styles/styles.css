@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -32,10 +33,12 @@ h1 {
 
 .item-family .items-counter {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .item-family .item-display {
-  min-width: 400px;
+  min-width: 300px;
   max-width: 600px;
   padding: 0 1rem 1rem;
   margin: 1rem;
@@ -52,7 +55,7 @@ h1 {
   font-size: 1.5rem;
   color: #e4dbd2;
   background-color: #17120e;
-  width: 50%;
+  width: 60%;
   margin: -1rem 1rem 1rem -1.7rem;
   padding: 3px 5px;
   border-radius: 5px 0 0 5px;
@@ -67,8 +70,22 @@ h1 {
 .item-family .item-display figure figcaption {
   font-size: .75em;
   font-weight: bold;
+  font-style: italic;
 }
 
 .item-family .item-display figure img {
   width: 200px;
+}
+
+footer {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+footer::before {
+  content: '©';
+  font-size: 1.2em;
 }

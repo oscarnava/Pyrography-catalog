@@ -1,6 +1,6 @@
 $back-color: #c8c0b3
-$item-min-display-width: 400px
-$item-max-display-width: 600px
+$item-min-display-width: 300px  // 400px
+$item-max-display-width: 600px  // 600px
 $item-display-border-width: 2px
 $item-header-color: #e4dbd2
 $item-header-background: #17120e // #553b28 //#4c4b49
@@ -33,6 +33,8 @@ h1
 
   .items-counter
     display: flex
+    flex-wrap: wrap
+    justify-content: center
 
   .item-display
     min-width: $item-min-display-width
@@ -51,7 +53,7 @@ h1
       font-size: 1.5rem
       color: $item-header-color
       background-color: $item-header-background
-      width: 50%
+      width: 60%
       margin: -1rem 1rem 1rem -1.7rem
       padding: 3px 5px
       border-radius: 5px 0 0 5px
@@ -64,6 +66,18 @@ h1
       figcaption
         font-size: .75em
         font-weight: bold
+        font-style: italic
 
       img
         width: $item-max-display-width / 3
+
+footer
+  font-size: 1.3rem
+  font-weight: bold
+  font-variant: small-caps
+  text-align: center
+  margin: 2rem 0
+
+  &::before
+    content: '©'
+    font-size: 1.2em
