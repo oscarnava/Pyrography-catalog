@@ -18,10 +18,36 @@ html
 body
   background-color: $back-color
 
-h1
+header
   font-family: 'Courgette', cursive
-  font-size: 5rem
-  text-align: center
+  display: flex
+  flex-flow: column
+  align-items: center
+  width: 80%
+  margin: 0 auto
+
+  .title
+    display: inline-flex
+    flex-flow: column
+    margin: 0 auto
+
+  h1
+    font-size: 5rem
+    text-align: center
+    margin-bottom: 0
+    line-height: 1em
+
+  h2
+    color: #7c5a3d
+    font-size: 2.5rem
+    text-align: right
+    padding: 0
+    margin: -1rem 1rem 3rem
+
+  p
+    font-family: 'Courgette', cursive
+    font-size: 1.5rem
+    margin: 1rem auto
 
 .item-family
   display: flex
@@ -41,14 +67,14 @@ h1
     min-width: $item-min-display-width
     max-width: $item-max-display-width
     padding: 0 1rem 1rem
-    margin: 1rem
+    margin: 2.5rem 2rem
     background-color: white
     border-radius: 3 * $item-display-border-width
     box-shadow: 10px 10px 19px -4px rgba(0,0,0,1.0);
-    border-top: solid $item-display-border-width rgba(0,0,0,0.15)
-    border-left: solid $item-display-border-width rgba(0,0,0,0.15)
-    border-right: solid $item-display-border-width rgba(0,0,0,0.75)
-    border-bottom: solid $item-display-border-width rgba(0,0,0,0.75)
+    // border-top: solid $item-display-border-width rgba(0,0,0,0.15)
+    // border-left: solid $item-display-border-width rgba(0,0,0,0.15)
+    // border-right: solid $item-display-border-width rgba(0,0,0,0.75)
+    // border-bottom: solid $item-display-border-width rgba(0,0,0,0.75)
 
     h3
       font-size: 1.5rem
@@ -57,7 +83,7 @@ h1
       width: 60%
       margin: -1rem 1rem 1rem -1.7rem
       padding: 3px 5px
-      border-radius: 5px 0 0 5px
+      border-radius: 5px
 
     figure
       float: left
