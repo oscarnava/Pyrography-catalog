@@ -77,6 +77,16 @@ h1 {
   width: 200px;
 }
 
+@media only screen and (max-width: 420px) {
+  .item-family .item-display figure {
+    float: none;
+    width: 100%;
+  }
+  .item-family .item-display figure img {
+    width: 100%;
+  }
+}
+
 footer {
   font-size: 1.3rem;
   font-weight: bold;
