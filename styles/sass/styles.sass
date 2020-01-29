@@ -1,4 +1,6 @@
 $low-res: 420px
+$portrait-size: 150px
+$portrait-border-size: 2px
 $back-color: #c8c0b3
 $item-min-display-width: 300px  // 400px
 $item-max-display-width: 600px  // 600px
@@ -24,12 +26,35 @@ header
   flex-flow: column
   align-items: center
   width: 80%
-  margin: 0 auto
+  margin: 2rem auto 0
 
-  .title
-    display: inline-flex
-    flex-flow: column
-    margin: 0 auto
+  .top
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+    @media only screen and (max-width: 800px)
+      flex-flow: column
+
+    .title
+      display: inline-flex
+      flex-flow: column
+      // margin: 0 auto
+
+    .portrait
+      width: $portrait-size
+      height: $portrait-size
+      // margin: 0 3rem
+      border-radius: 5px
+      background-image: url(../img/arturo.jpg)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      border-top: solid $portrait-border-size rgba(0,0,0,0.15)
+      border-left: solid $portrait-border-size rgba(0,0,0,0.15)
+      border-right: solid $portrait-border-size rgba(0,0,0,0.75)
+      border-bottom: solid $portrait-border-size rgba(0,0,0,0.75)
 
   h1
     font-size: 5rem

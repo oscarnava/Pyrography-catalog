@@ -20,13 +20,39 @@ header {
   flex-flow: column;
   align-items: center;
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto 0;
 }
 
-header .title {
+header .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 800px) {
+  header .top {
+    flex-flow: column;
+  }
+}
+
+header .top .title {
   display: inline-flex;
   flex-flow: column;
-  margin: 0 auto;
+}
+
+header .top .portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  background-image: url(../img/arturo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: solid 2px rgba(0, 0, 0, 0.15);
+  border-left: solid 2px rgba(0, 0, 0, 0.15);
+  border-right: solid 2px rgba(0, 0, 0, 0.75);
+  border-bottom: solid 2px rgba(0, 0, 0, 0.75);
 }
 
 header h1 {
