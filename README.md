@@ -6,7 +6,7 @@ This project aims to be a prototype of a virtual showroom for the art of the Mex
 
 The design is fully responsive and looks good on wide screens as on small ones. It's mainly a proof-of-concept.
 
-## Built using...
+## Built with:
 - HTML
 - SASS / CSS
 - ☕ More coffee
