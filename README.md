@@ -21,8 +21,8 @@ The design is fully responsive and looks good on wide screens as on small ones. 
   - Linkedin: [Oscar Nava Trujillo](https://www.linkedin.com/in/oscar-nava-trujillo/)
 
 ## ⌛ To-do's
-  - Enable a bigger view when the image is clicked
-  - Carrousell display when clicking on the header title
+  - [ ] Enable a bigger view when the image is clicked
+  - [ ] Carrousell display when clicking on the header title
 
 ## 📦 Contributing
 Contributions, issues and feature requests are welcome!
